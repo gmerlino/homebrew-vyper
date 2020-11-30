@@ -22,15 +22,16 @@ class Vyper < Formula
   end
 
   def install
+     mkdir_p pkgshare
+     cp_r "examples", pkgshare
      virtualenv_install_with_resources
+#     (pkgshare/"examples").install Dir["examples"]
   end
 
   test do
-#    (testpath/"hello.sml").write <<~'EOS'
-#      val () = print "Hello, Homebrew!\n"
-#    EOS
-#    system "#{bin}/mlton", "hello.sml"
-#    assert_equal "Hello, Homebrew!\n", `./hello`
     system "make", "test"
+#    cp pkgshare/"examples/crowdfund.vy", testpath
+    system "vyper", "crowdfund.vy"
+    system "vyper", "#{pkgshare}/examples/crowdfund.vy"
   end
 end
