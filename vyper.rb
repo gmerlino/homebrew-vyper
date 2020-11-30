@@ -8,6 +8,7 @@ class Vyper < Formula
   depends_on "gmp"
   depends_on "leveldb"
   depends_on "libyaml"
+  depends_on "pyasttokens"
   depends_on "pyscrypt"
   depends_on "python"
 
