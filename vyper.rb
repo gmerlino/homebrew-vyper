@@ -11,6 +11,11 @@ class Vyper < Formula
   depends_on "pyscrypt"
   depends_on "python"
 
+  resource "six" do
+    url "https://files.pythonhosted.org/packages/6b/34/415834bfdafca3c5f451532e8a8d9ba89a21c9743a0c59fbd0205c7f9426/six-1.15.0.tar.gz"
+    sha256 "30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"
+  end
+
   resource "asttokens" do
     url "https://files.pythonhosted.org/packages/1d/d2/cf56e804cd7b4e8b92813e943a815f96b0d2545c967927356783b6860a2e/asttokens-2.0.4.tar.gz"
     sha256 "a42e57e28f2ac1c85ed9b1f84109401427e5c63c04f61d15b8842b027eec5128"
