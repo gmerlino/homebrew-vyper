@@ -3,8 +3,8 @@ class Pyscrypt < Formula
 
   desc "Python bindings for the scrypt KDF"
   homepage "https://pypi.org/project/scrypt/"
-  url "https://files.pythonhosted.org/packages/1f/af/70a7cb4f27f1673bc8b6af3587545eb0327e5823ab96b1eb81b541fe087e/scrypt-0.8.7.tar.gz"
-  sha256 "b97744546656d98c4eff72da7856067ba21a538c34d519a346d4be3a66385342"
+  url "https://files.pythonhosted.org/packages/d2/e1/f2cf7a9d88865e7f030b8674d60343e0d3c511c9a929b2dfc894265df878/scrypt-0.8.19.tar.gz"
+  sha256 "ad143035ae0cf5e97c4b399f4e4686adf442c5f0f06f9f198a0cc6c091335fb7"
 
   depends_on "libyaml"
   depends_on "openssl"
@@ -21,8 +21,8 @@ class Pyscrypt < Formula
   end
 
   resource "PyYAML" do
-    url "http://pyyaml.org/download/pyyaml/PyYAML-3.13.tar.gz"
-    sha256 "3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf"
+    url "http://pyyaml.org/download/pyyaml/PyYAML-5.3.1.tar.gz"
+    sha256 "b8eac752c5e14d3eca0e6dd9199cd627518cb5ec06add0de9d32baeee6fe645d"
   end
 
   resource "requests" do
